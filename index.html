@@ -1,17 +1,956 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Coming Soon - EIM Ingeniería</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-<h1>Coming Soon - EIM Ingeniería</h1>
+<head>
+    <title>EIM Ingeniería</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="EIM Ingeniería" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- Archivos CSS
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- esquema de color -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Ir hasta arriba</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
         
-        <script src="" async defer></script>
-    </body>
-</html>
+        <!-- preloader de la página comienza -->
+        <div id="de-loader"></div>
+        <!-- preloader de la página cierra -->
+
+        <!-- encabezado comienza -->
+        <header class="transparent scroll-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-phone"></i>+929 333 9296</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-envelope"></i>contact@eim.com</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-wall-clock"></i>Lun - Vie 08.00 - 18.00</a></div>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo comienza -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/logo.webp" alt="" >
+                                        <img class="logo-scroll" src="images/logo-black.webp" alt="" >
+                                        <img class="logo-mobile" src="images/logo.webp" alt="" >
+                                    </a>
+                                </div>
+                                <!-- logo cierra -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    
+                                    <li><a class="menu-item" href="#">Servicios</a>
+                                       <!-- <ul>
+                                            <li><a class="menu-item" href="installation.html">Instalación</a></li>
+                                            <li><a class="menu-item" href="repair.html">Reparación</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Mantenimiento</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Planes de precios</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Lista de precios</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a class="menu-item" href="#">Nosotros</a></li>
+                                    <!--<li><a class="menu-item" href="projects.html">Proyectos</a></li>
+                                    <li><a class="menu-item" href="products.html">Productos</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="products.html">Todos los productos</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html">Detalles del producto nuevo</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Detalles del producto simple</a></li>
+                                        </ul>
+                                    </li>-->
+
+                                    
+                                    <li><a class="menu-item" href="#">Contacto</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">          
+                                    <a href="contact.html" class="btn-main bg-color-2">WhatsApp</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- encabezado cierra -->
+        <!-- contenido comienza -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section class="section-dark text-light no-top no-bottom position-relative overflow-hidden z-1000">
+                <div class="v-center">
+                    <div class="swiper">
+                      <!-- Contenedor adicional requerido -->
+                      <div class="swiper-wrapper">
+                        <!-- Diapositivas -->
+                        <div class="swiper-slide">
+                            <div class="swiper-inner" data-bgimage="url(images/slider/1.webp)">
+                                <div class="sw-caption">
+                                    <div class="container">
+                                        <div class="row gx-5 align-items-center">
+
+                                            <div class="spacer-double"></div>
+
+                                            <div class="col-lg-8 offset-lg-2 text-center">     
+                                                <div class="spacer-single"></div>
+                                                <div class="sw-text-wrapper">
+                                                    <div class="subtitle s2 mb-2"></div>
+                                                    <h2 class="slider-title mb-3">Tus Aliados en el Control del Clima</h2>
+                                                    <h3 class="slider-teaser mb-3">Soluciones para tu comodidad</h3>
+                                                    <div class="spacer-10"></div>
+                                                    <a class="btn-main mb10 mb-3" href="contact.html">WhatsApp</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="spacer-single"></div>
+                                        </div>
+
+                                        <div class="row g-4 slider-extra sm-hide">
+                                            <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/labor.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Técnicos expertos</h4>
+                                                        <p>Contamos con técnicos expertos que brindan un servicio de excelencia</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/calendar.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Horarios flexibles</h4>
+                                                        <p>Contamos con horarios flexibles para brindarte el servicio</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/best-price.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Transparencia en precios</h4>
+                                                        <p>Un compromiso con la honestidad, la confianza y el respeto hacia nuestros clientes</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sw-overlay"></div>
+                            </div>
+                        </div>
+                        <!-- Diapositivas -->
+
+                        <!-- Diapositivas -->
+                        <div class="swiper-slide">
+                            <div class="swiper-inner" data-bgimage="url(images/slider/2.webp)">
+                                <div class="sw-caption">
+                                    <div class="container">
+                                        <div class="row gx-5 align-items-center">
+
+                                            <div class="spacer-double"></div>
+
+                                            <div class="col-lg-8 offset-lg-2 text-center">     
+                                                <div class="spacer-single"></div>
+                                                <div class="sw-text-wrapper">
+                                                    <div class="subtitle s2 mb-2">Comodidad pura</div>
+                                                    <h2 class="slider-title mb-3">Haciendo que cada temporada se sienta perfecta</h2>
+                                                    <h3 class="slider-teaser mb-3">Soluciones para comodidad y confiabilidad</h3>
+                                                    <div class="spacer-10"></div>
+                                                    <a class="btn-main mb10 mb-3" href="contact.html">Reservar una reparación</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="spacer-single"></div>
+                                        </div>
+
+                                        <div class="row g-4 slider-extra sm-hide">
+                                            <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/labor.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Técnicos expertos</h4>
+                                                        <p>Confía en nosotros para ofrecer soluciones confiables y un servicio excepcional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/calendar.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Horarios flexibles</h4>
+                                                        <p>Confía en nosotros para ofrecer soluciones confiables y un servicio excepcional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/best-price.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Transparencia en precios</h4>
+                                                        <p>Confía en nosotros para ofrecer soluciones confiables y un servicio excepcional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="sw-overlay s2"></div>
+                            </div>
+                        </div>
+                        <!-- Diapositivas -->
+                        
+
+                      </div>
+                      <!-- Si necesitamos paginación -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- Si necesitamos botones de navegación -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                      <!-- Si necesitamos barra de desplazamiento -->
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt50">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="images/misc/handy-man.webp" class="img-fluid wow scaleIn" alt="">
+                        </div>
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="subtitle wow fadeInUp mb-3">Bienvenido</div>
+                            <h2 class="wow fadeInUp">Especialistas en Aire Acondicionado y Calefacción</h2>
+                            <p class="wow fadeInUp">Eu cupidatat sit dolore enim consequat veniam adipisicing et quis ut in eiusmod consectetur dolore qui aliqua sunt culpa ad qui mollit et irure nisi laborum commodo minim commodo occaecat ut sint dolor mollit culpa excepteur magna pariatur.</p>
+                            <div class="spacer-10"></div>
+                            <a class="btn-main wow fadeInUp" href="about.html">Sobre la empresa</a>
+                        </div>
+                    </div>
+
+                    <div class="spacer-double"></div>
+
+                    <div class="row gx-5">
+                        <div class="col-lg-2 col-6">
+                            <img src="images/awards/1.webp" class="p-2 img-fluid wow scaleIn" data-wow-delay=".0s" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-6">
+                            <img src="images/awards/2.webp" class="p-2 img-fluid wow scaleIn" data-wow-delay=".2s" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-6">
+                            <img src="images/awards/3.webp" class="p-2 img-fluid wow scaleIn" data-wow-delay=".4s" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-6">
+                            <img src="images/awards/4.webp" class="p-2 img-fluid wow scaleIn" data-wow-delay=".6s" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-6">
+                            <img src="images/awards/5.webp" class="p-2 img-fluid wow scaleIn" data-wow-delay=".8s" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-6">
+                            <img src="images/awards/6.webp" class="p-2 img-fluid wow scaleIn" data-wow-delay="1s" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 text-center">
+                                <div class="subtitle bg-color-3 wow fadeInUp mb-3">Soluciones completas</div>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Nuestros servicios</h2>
+                                <p class="lead wow fadeInUp">Qui culpa qui consequat officia cillum quis irure aliquip ut dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <img src="images/svg/air-conditioner-svgrepo-com.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-3 rounded-10px absolute" alt="">
+                                    <img src="images/misc/services-1.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color-3">
+                                    <h4>Instalación</h4>
+                                    <p class="no-bottom">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para todas sus necesidades de HVAC.</p>
+                                    <div class="spacer-20"></div>
+                                    <a class="btn-main btn-light-trans" href="installation.html">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <img src="images/svg/wrench-line-svgrepo-com.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color-2 rounded-10px absolute" alt="">
+                                    <img src="images/misc/services-2.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color-2 text-light">                                
+                                    <h4>Reparación</h4>
+                                    <p class="no-bottom">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para todas sus necesidades de HVAC.</p>
+                                    <div class="spacer-20"></div>
+                                    <a class="btn-main btn-dark-trans" href="repair.html">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                            <div class="rounded-20px overflow-hidden">
+                                <div class="relative">
+                                    <img src="images/svg/completed-order-svgrepo-com.svg" class="w-70px mb20 top-30px start-30px p-2 bg-color rounded-10px absolute" alt="">
+                                    <img src="images/misc/services-3.webp" class="img-fluid" alt="">
+                                </div>
+                                <div class="padding40 bg-color text-light">                                
+                                    <h4>Mantenimiento</h4>
+                                    <p class="no-bottom">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para todas sus necesidades de HVAC.</p>
+                                    <div class="spacer-20"></div>
+                                    <a class="btn-main btn-dark-trans" href="maintenance.html">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        </div>
+                        </section>
+                        
+                        <section class="bg-color-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-3 text-center">
+                                        <div class="subtitle bg-color-2 text-white wow fadeInUp mb-3">Top 6 Razones</div>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Por Qué Elegirnos</h2>
+                                        <p class="lead wow fadeInUp">Qui culpa qui consequat officia cillum quis irure aliquip ut dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.</p>
+                                        <div class="spacer-single"></div>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".0s">
+                                        <div>
+                                            <i class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                            <div class="pl-80">
+                                                <h4>Técnicos Expertos</h4>
+                                                <p class="mb-0">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para sus necesidades de HVAC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                        <div>
+                                            <i class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                            <div class="pl-80">
+                                                <h4>Horarios Flexibles</h4>
+                                                <p class="mb-0">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para sus necesidades de HVAC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                        <div>
+                                            <i class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                            <div class="pl-80">
+                                                <h4>Precios Transparentes</h4>
+                                                <p class="mb-0">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para sus necesidades de HVAC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                        <div>
+                                            <i class="bg-color-2 text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                            <div class="pl-80">
+                                                <h4>Piezas de Calidad</h4>
+                                                <p class="mb-0">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para sus necesidades de HVAC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                        <div>
+                                            <i class="bg-color-2 text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                            <div class="pl-80">
+                                                <h4>Servicios de Emergencia</h4>
+                                                <p class="mb-0">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para sus necesidades de HVAC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                                        <div>
+                                            <i class="bg-color-2 text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                            <div class="pl-80">
+                                                <h4>Garantía de Satisfacción</h4>
+                                                <p class="mb-0">Confíe en nosotros para ofrecer soluciones confiables, un servicio excepcional y tranquilidad para sus necesidades de HVAC.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="spacer-double"></div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="no-top mt-100">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="padding60 rounded-1 sm-padding40 overflow-hidden position-relative jarallax text-light">
+                                            <img src="images/background/9.webp" class="jarallax-img" alt="">
+                                            <div class="row align-items-center g-4 gx-5 relative z-index-1000">
+                                                <div class="col-lg-8">
+                                                    <div class="subtitle s2 wow fadeInUp mb-3">Especialista en HVAC</div>
+                                                    <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s">Somos EIM Ingeniería, especializados en proporcionar servicios de instalaciones eléctricas de primera calidad adaptados a sus necesidades únicas.</h2>
+                                                    <a class="btn-main" href="contact.html">Programar Ahora</a>
+                                                </div>
+                                                <div class="col-lg-4 text-center">
+                                                    <img src="" class="img-fluid rounded-10px wow scaleIn" alt="">
+                                                    <h5 class="mt-3 mb-0">Nombre del dueño</h5>
+                                                    <p class="small mb-2">Fundador y CEO</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> 
+                        
+                        <section class="no-top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-3 text-center">
+                                        <div class="subtitle wow fadeInUp mb-3">Proceso de Servicios</div>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Cómo Funciona</h2>
+                                        <p class="lead wow fadeInUp">Qui culpa qui consequat officia cillum quis irure aliquip ut dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.</p>
+                                        <div class="spacer-single"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="row g-4 arrow-divider">
+                                        <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay=".2s">
+                                            <div class="de-step-s1 text-light">
+                                                <div class="d-number wow fadeInRight" data-wow-delay=".2s">Paso 1</div>
+                                                <h4>Consulta</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay=".6s">
+                                            <div class="de-step-s1 text-light">
+                                                <div class="d-number wow fadeInRight" data-wow-delay=".6s">Paso 3</div>
+                                                <h4>Acuerdo</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay=".8s">
+                                            <div class="de-step-s1 text-light">
+                                                <div class="d-number wow fadeInRight" data-wow-delay=".8s">Paso 3</div>
+                                                <h4>Ejecución</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay="1s">
+                                            <div class="de-step-s1 text-light">
+                                                <div class="d-number wow fadeInRight" data-wow-delay="1s">Paso 4</div>
+                                                <h4>Control de Calidad</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="no-top">
+                            <div class="container">
+                                <div class="row gx-5 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="subtitle wow fadeInUp mb-3">Nuestra Especialización</div>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Desde Desafíos de Enfriamiento hasta Soluciones de Calefacción</h2>
+                                        <p class="wow fadeInUp">Bienvenido a EIM Ingeniería, su socio de confianza para todas sus necesidades de HVAC. Con años de experiencia en la industria y un compromiso con la excelencia, nos especializamos en proporcionar servicios de calefacción, ventilación y aire acondicionado de primera calidad adaptados a sus requisitos únicos. Desde la instalación y reparación hasta el mantenimiento y las actualizaciones, nuestros técnicos calificados están dedicados a ofrecer soluciones confiables que garantizan su comodidad y satisfacción.</p>
+                                    </div>
+                        
+                                    <div class="col-lg-6">
+                                        <div class="row g-4">
+                                            <div class="col-6">
+                                                <img src="images/misc/9.webp" class="img-fluid rounded-10 mb-4 wow scaleIn" alt="">
+                                                <div class="col-12 text-center">
+                                                    <div class="bg-color text-light px-4 pt30 pb10 rounded-10 wow fadeInLeft">
+                                                        <div class="de_count">
+                                                            <h3><span class="timer" data-to="850" data-speed="3000"></span>+</h3>
+                                                            <h4>Proyectos Completados</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="spacer-double sm-hide"></div>
+                                                <div class="col-12 text-center">
+                                                    <div class="bg-color-3 px-4 pt30 pb10 rounded-10 wow fadeInRight">
+                                                        <div class="de_count">
+                                                            <h3><span class="timer" data-to="99" data-speed="3000"></span>%</h3>
+                                                            <h4>Satisfacción del Cliente</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="images/misc/8.webp" class="img-fluid rounded-10 mt-4 wow scaleIn" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                       <!-- <section class="no-top text-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-3 text-center">
+                                        <div class="subtitle wow fadeInUp mb-3">Testimonios</div>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Nuestros Clientes Felices</h2>
+                                        <p class="lead wow fadeInUp">Qui culpa qui consequat officia cillum quis irure aliquip ut dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.</p>
+                                        <div class="spacer-single"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="owl-carousel owl-theme wow fadeInUp" id="testimonial-carousel">
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/1.jpg"> <div>Michael S.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Sus técnicos siempre son puntuales, profesionales y conocedores. Desde el mantenimiento regular hasta las reparaciones de emergencia, nos tienen cubiertos. ¡Altamente recomendados!"</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/2.jpg"> <div>Robert L.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Respondieron rápidamente y tuvieron un técnico en mi puerta en poco tiempo. En unas pocas horas, mi aire acondicionado estaba funcionando sin problemas. Estoy increíblemente agradecido por su rápida respuesta y trabajo de reparación experto."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/3.jpg"> <div>Jake M.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Su compromiso con la satisfacción del cliente es insuperable. Ya sea una visita de mantenimiento rutinario o un trabajo de reparación complejo, sé que puedo contar con ellos para ofrecer un servicio excepcional cada vez."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/4.jpg"> <div>Alex P.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Desde la consulta inicial hasta la instalación final, su equipo demostró profesionalismo, experiencia y un compromiso con la excelencia. Nuestro nuevo sistema HVAC está funcionando perfectamente."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/5.jpg"> <div>Carlos R.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Sus técnicos diagnosticaron rápidamente el problema y recomendaron una solución rentable. Gracias a su experiencia y trabajo de reparación eficiente, nuestro hogar ahora está consistentemente cómodo."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/6.jpg"> <div>Edward B.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Su atención al detalle, dedicación a la satisfacción del cliente y compromiso con la calidad los distingue de la competencia. Confíe en ellos, ya sea una visita de mantenimiento rutinario o un trabajo de reparación complejo."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/7.jpg"> <div>Daniel H.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"De principio a fin, su equipo brindó un servicio de primera clase, guiándome a través del proceso de selección, manejando la instalación con precisión y asegurándose de que todo funcionara perfectamente."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="de_testi s2">
+                                                <blockquote>
+                                                    <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                                    <div class="de_testi_by">
+                                                        <img class="bg-white p-2 circle" alt="" src="images/testimonial/8.jpg"> <div>Bryan G.<span>Cliente</span></div>
+                                                    </div>
+                                                    <p>"Sus técnicos son conocedores, corteses y siempre van más allá para garantizar la satisfacción del cliente. Ya sea una puesta a punto rutinaria o una reparación importante."</p>
+                                                    <div class="de-rating-ext">
+                                                        <span class="d-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+                        
+                        <section class="bg-color-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-3 text-center">                            
+                                        <div class="subtitle bg-color-2 text-light wow fadeInUp mb-3">¿Tienes</div>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Alguna pregunta?</h2>
+                                    </div>
+                                </div>
+                        
+                                <div class="row gx-5 align-items-center">
+                                    <div class="col-lg-6 mb-sm-20 position-relative">
+                                        <div class="relative p-4">
+                                            <div class="absolute start-50px top-50px">
+                                                <i class="bg-color text-light fs-48 p-2 id-color icofont-headphone-alt rounded-10px mb-2 wow scaleIn"></i><br>
+                                            </div>
+                                            <img src="images/misc/1.webp" class="img-fluid rounded-20px wow zoomIn" data-wow-delay="0s" alt="">
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-lg-6">
+                                        <div class="accordion s2 wow fadeInUp">
+                                            <div class="accordion-section">
+                                                <div class="accordion-section-title" data-tab="#accordion-a1">
+                                                    ¿Cuándo debo programar el mantenimiento?
+                                                </div>
+                                                <div class="accordion-section-content" id="accordion-a1">
+                                                    <p>Se recomienda programar el mantenimiento del HVAC al menos una vez al año, idealmente antes del inicio de la temporada de calefacción o enfriamiento. El mantenimiento regular ayuda a mejorar la eficiencia, prevenir averías y prolongar la vida útil de su sistema.</p>
+                                                </div>
+                                                <div class="accordion-section-title" data-tab="#accordion-a2">
+                                                    ¿Con qué frecuencia debo reemplazar los filtros del HVAC?
+                                                </div>
+                                                <div class="accordion-section-content" id="accordion-a2">
+                                                    <p>Los filtros del HVAC generalmente deben reemplazarse cada 1 a 3 meses, dependiendo de factores como el tipo de filtro, la calidad del aire interior y el uso. Los filtros obstruidos o sucios pueden restringir el flujo de aire y reducir la eficiencia del sistema.</p>
+                                                </div>                                        
+                                                <div class="accordion-section-title" data-tab="#accordion-a3">
+                                                    ¿Utilizan piezas genuinas para las reparaciones?
+                                                </div>
+                                                <div class="accordion-section-content" id="accordion-a3">
+                                                    <p>Sí, utilizamos solo piezas genuinas de alta calidad para garantizar el mejor rendimiento y longevidad de su dispositivo después de la reparación.</p>
+                                                </div>
+                                                <div class="accordion-section-title" data-tab="#accordion-a4">
+                                                    ¿Hay garantía en sus reparaciones?
+                                                </div>
+                                                <div class="accordion-section-content" id="accordion-a4">
+                                                    <p>Absolutamente. Todas nuestras reparaciones vienen con una garantía para brindarle tranquilidad. La duración específica de la garantía puede variar según el tipo de reparación y el dispositivo.</p>
+                                                </div>
+                                                <div class="accordion-section-title" data-tab="#accordion-a5">
+                                                    ¿Cómo obtengo un presupuesto para mi reparación?
+                                                </div>
+                                                <div class="accordion-section-content" id="accordion-a5">
+                                                    <p>Puede obtener un presupuesto visitando nuestro sitio web o contactando a nuestro servicio al cliente. Ofrecemos precios transparentes sin cargos ocultos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            
+
+            <section class="no-top relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rounded-20px bg-color  overflow-hidden">
+                                <div class="row align-items-center g-0">
+                                    <div class="col-lg-6">
+                                        <div class="h-100 padding60 sm-padding40 overflow-hidden position-relative text-light jarallax">
+                                            <div class="spacer-double"></div>
+                                            <img src="images/background/3.webp" class="jarallax-img" alt="">
+                                            <div class="spacer-double"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 text-center">
+                                        <div class="h-100 text-light">
+                                            <div class="spacer-double"></div>
+                                            <div class="subtitle s2 mb-2">Emergencias</div>
+                                            <h2 class="phone mb0 wow fadeInUp" data-wow-delay=".2s"><i class="icofont-phone-circle"></i> +929 333 9296</h2>
+                                            <div class="spacer-double"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-12 text-center wow fadeInUp">
+                            <h4 class="wow fadeInUp" data-wow-delay=".2s">Algunas empresas con las que hemos trabajado</h4>
+                        </div>
+
+                        <div class="col-md-12 wow fadeInUp">
+                            <div id="owl-logo" class="logo-carousel no-alpha owl-carousel owl-theme">
+                                <img src="images/logo/1.webp" class="img-fluid px-4" alt="">
+                                <img src="images/logo/2.webp" class="img-fluid px-4" alt="">
+                                <img src="images/logo/3.webp" class="img-fluid px-4" alt="">
+                                <img src="images/logo/4.webp" class="img-fluid px-4" alt="">
+                                <img src="images/logo/5.webp" class="img-fluid px-4" alt="">
+                                <img src="images/logo/6.webp" class="img-fluid px-4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-color text-light pt40 pb40">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-9">
+                            <h3 class="mb-1"><i class="icofont-check-circled fs-32 me-3 id-color-2"></i>Soluciones de calefacción y aire acondicionado de calidad</h3>
+                        </div>
+            
+                        <div class="col-lg-3 text-lg-end text-start">
+                            <a class="btn-main bg-color-2" href="contact.html">Programar Cita</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            </div>
+            <!-- contenido cerrado -->
+            
+            <!-- footer begin -->
+            <footer class="section-dark">
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="images/logo.webp" alt="">
+                            <div class="spacer-20"></div>
+                            <p>Nos especializamos en proporcionar servicios de calefacción, ventilación y aire acondicionado de primera calidad adaptados a sus requisitos únicos. Nuestros técnicos calificados están dedicados a ofrecer soluciones confiables que garantizan su comodidad y satisfacción.</p>
+            
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="widget">
+                                        <h5>Empresa</h5>
+                                        <ul>                                        
+                                            <li><a href="#">Inicio</a></li>
+                                            <li><a href="#">Nuestros Servicios</a></li>
+                                            <li><a href="#">Proyectos</a></li>
+                                            <li><a href="#">Sobre Nosotros</a></li>
+                                            <li><a href="#">Noticias</a></li>
+                                            <li><a href="#">Contacto</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="widget">
+                                        <h5>Nuestros Servicios</h5>
+                                        <ul>
+                                            <li><a href="#">Mantenimiento</a></li>
+                                            <li><a href="#">Reparaciones</a></li>
+                                            <li><a href="#">Instalación</a></li>
+                                            <li><a href="#">Emergencias</a></li>
+                                            <li><a href="#">Reemplazos</a></li>
+                                            <li><a href="#">Limpieza de Polvo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                            <div class="widget">
+                                <h5 class="id-color-2">24 Horas y Emergencias</h5>
+                                <h2 class="jarallax mb0 wow fadeInUp" data-wow-delay=".2s"><i class="icofont-phone-circle id-color-2"></i> +929 333 9296</h2>
+            
+                                <div class="spacer-20"></div>
+            
+                                <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color-2"></i>Ubicación de la Oficina</div>
+                                100 S Main St, Nueva York, NY
+            
+                                <div class="spacer-20"></div>
+            
+                                <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color-2"></i>Envíe un Mensaje</div>
+                                contact@eim.com                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subfooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="de-flex">
+                                    <div class="de-flex-col">
+                                        Copyright 2025 - EIM Ingeniería
+                                    </div>
+                                    <ul class="menu-simple">
+                                        <li><a href="#">Términos y Condiciones</a></li>
+                                        <li><a href="#">Política de Privacidad</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer close -->
+            </div>
+            
+            
+            <!-- Archivos Javascript
+            ================================================== -->
+            <script src="js/plugins.js"></script>
+            <script src="js/designesia.js"></script>
+            <script src="js/swiper.js"></script>
+            <script src="js/custom-marquee.js"></script>
+            <script src="js/custom-swiper-1.js"></script>
+            
+            </body>
+            
+            </html>
